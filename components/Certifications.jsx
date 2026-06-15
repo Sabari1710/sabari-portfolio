@@ -15,6 +15,16 @@ const CERT_GROUPS = [
     ]
   },
   {
+    category: 'AI & Technology',
+    certs: [
+      {
+        name: 'Google AI Professional Certificate',
+        issuer: 'Google · Coursera',
+        date: 'Jun 2026'
+      }
+    ]
+  },
+  {
     category: 'Aerospace & Drone',
     certs: [
       {
@@ -260,7 +270,7 @@ export default function Certifications() {
                 </div>
                 <div className="flex items-center justify-between py-3 border-b border-slate-800">
                   <span className="text-slate-400 text-sm">Domains</span>
-                  <span className="gradient-text font-bold text-2xl">4</span>
+                  <span className="gradient-text font-bold text-2xl">5</span>
                 </div>
                 <div className="flex items-center justify-between py-3 border-b border-slate-800">
                   <span className="text-slate-400 text-sm">Leadership Roles</span>

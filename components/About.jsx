@@ -6,8 +6,8 @@ import { motion, useInView } from 'framer-motion'
 const STATS = [
   { value: '13', unit: 'Months', label: 'Industry Experience' },
   { value: '3.33', unit: 'GPA', label: 'MS Engineering Management' },
-  { value: '3', unit: '', label: 'Major Projects Led' },
-  { value: '7+', unit: '', label: 'Certifications & Badges' }
+  { value: '4', unit: '', label: 'Major Projects Led' },
+  { value: '8+', unit: '', label: 'Certifications & Badges' }
 ]
 
 const containerVariants = {
@@ -64,15 +64,15 @@ export default function About() {
             </motion.h2>
 
             <motion.p variants={itemVariants} className="text-slate-400 leading-relaxed text-base">
-              {`I'm an aerospace engineer turned project lead with 13 months of hands-on industry experience coordinating cross-functional teams through full UAV flight test campaigns — from concept definition and technical design reviews through high-altitude systems integration to airborne execution. I hold a DGCA Remote Pilot Certificate (small-category UAS), giving me both the management perspective and operational ground truth to lead flight programs effectively.`}
+              {`I'm an aerospace engineer turned project lead with hands-on industry experience coordinating cross-functional teams through full UAV flight test campaigns — from concept definition and technical design reviews through high-altitude systems integration to airborne execution. Currently, I'm also designing and operationalizing a student research-training program from the ground up at NeuMove Lab, Northeastern University. I hold a DGCA Remote Pilot Certificate (small-category UAS), giving me both the management perspective and operational ground truth to lead programs effectively.`}
             </motion.p>
 
             <motion.p variants={itemVariants} className="text-slate-400 leading-relaxed text-base">
-              {`My project management foundation is built from real delivery: managing live UAV schedules, risk registers, and multi-disciplinary teams at Dashagriv Aerospace. The Google Project Management Certificate (Coursera) gave that experience a structured framework — project lifecycle, stakeholder communication, and delivery methodologies. I'm currently deepening both through a Master of Science in Engineering Management at Northeastern University (GPA 3.33), with coursework in engineering project management, operations research, and statistical analysis.`}
+              {`My project management foundation is built from real delivery: managing live UAV schedules, risk registers, and multi-disciplinary teams at Dashagriv Aerospace. The Google Project Management Certificate and Google AI Professional Certificate (both via Coursera) gave that experience a structured framework — project lifecycle, stakeholder communication, delivery methodologies, and AI-driven productivity tools. I'm currently deepening both through a Master of Science in Engineering Management at Northeastern University (GPA 3.33), with coursework in engineering project management, operations research, and statistical analysis.`}
             </motion.p>
 
             <motion.p variants={itemVariants} className="text-slate-400 leading-relaxed text-base">
-              {`I'm actively seeking project, program, or product management roles in aerospace, UAV, and autonomous systems — where technical depth and execution discipline meet to build things that actually fly.`}
+              {`I'm actively seeking project, program, or operations management roles in aerospace, UAV, and autonomous systems — where technical depth and execution discipline meet to build things that actually fly.`}
             </motion.p>
           </motion.div>
 

@@ -5,6 +5,18 @@ import { motion, useInView } from 'framer-motion'
 
 const EXPERIENCES = [
   {
+    company: 'NeuMove Lab, Northeastern University',
+    period: 'May 2026 – Present',
+    role: 'Graduate Research Coordinator',
+    location: 'Boston, MA',
+    current: true,
+    bullets: [
+      'Program Design: Designing the end-to-end operational structure for a new student research-training program from the ground up — student intake pipeline, quality-control (QC) criteria, and centralized tracking systems.',
+      'Process Optimization: Standardizing informal lab workflows into repeatable SOPs and reporting templates to streamline student training and improve data-collection efficiency.',
+      'Technical Coordination: Developing the core motion-analysis program framework with the PI and a PhD researcher, ensuring systems and documentation scale as the program grows.'
+    ]
+  },
+  {
     company: 'Dashagriv Aerospace Technology Pvt. Ltd.',
     period: 'Oct 2024 – Nov 2025',
     role: 'Project Lead — Flight Systems Engineer & Remote Pilot',
@@ -108,9 +120,17 @@ export default function Experience() {
                   {/* Header */}
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-1">
                     <div>
-                      <h3 className="text-white font-bold text-lg leading-snug">
-                        {exp.company}
-                      </h3>
+                      <div className="flex items-center gap-2 flex-wrap mb-0.5">
+                        <h3 className="text-white font-bold text-lg leading-snug">
+                          {exp.company}
+                        </h3>
+                        {exp.current && (
+                          <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-900/50 border border-emerald-700/60 text-emerald-400 text-xs font-semibold">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                            CURRENT
+                          </span>
+                        )}
+                      </div>
                       <p className="text-blue-400 text-sm font-medium mt-0.5">
                         {exp.role}
                       </p>
