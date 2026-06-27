@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "framer-motion": "^11.3.21",
     "next": "^16.2.6",
     "react": "^18",
